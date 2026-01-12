@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinix D-Ready</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #dce6ff;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #0D2C73;
+            color: white;
+            padding: 14px 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 14px;
+            width: 86%;
+            margin: 30px auto 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .navbar-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .logout-btn {
+            background: #1B4BA3;
+            padding: 8px 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            width: 86%;
+            margin: auto;
+            background: linear-gradient(to right, #4B79FF, #9CD5FF);
+            padding: 50px;
+            border-radius: 16px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .hero-title {
+            font-size: 28px;
+            font-weight: bold;
+            max-width: 450px;
+            line-height: 1.4;
+        }
+
+        .hero-image {
+            width: 260px;
+            height: 250px;
+            background: white;
+            border-radius: 16px;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/709/709790.png');
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* FEATURES SECTION */
+        .features-title {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 40px;
+            color: #1B1B1B;
+            font-weight: 600;
+        }
+
+        .features-container {
+            width: 86%;
+            margin: 20px auto 40px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .feature-card {
+            flex: 1;
+            background: linear-gradient(to bottom, #8BB8FF, #1C449B);
+            color: white;
+            padding: 25px 20px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            cursor: pointer;
+            transition: 0.25s;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.03);
+            opacity: 0.95;
+        }
+
+        .feature-card .icon {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card h3 {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .feature-card p {
+            font-size: 13px;
+            margin-top: 12px;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        /* NEXT BUTTON */
+        .next-btn-container {
+            text-align: center;
+            margin: 50px 0 60px;
+        }
+
+        .next-btn {
+            display: inline-block;
+            background: #0D2C73;
+            color: white;
+            padding: 12px 35px;
+            font-size: 16px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: 500;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+        }
+
+        .next-btn:hover {
+            background: #1B4BA3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="nav-left">VINIX D-Ready</div>
+
+        <div class="navbar-menu">
+            <a href="#home">Home</a>
+            <a href="#feature">Feature</a>
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+
+        <a href="index.html" class="logout-btn" style="text-decoration:none; color:white;">
+            Logout 👤
+        </a>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-title">
+            Ukur Kesiapan Digital Anda bersama <br> <strong>Vinix D-Ready</strong>
+        </div>
+
+        <div class="hero-image"></div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <div class="features-title">Features</div>
+
+    <div class="features-container">
+
+        <div class="feature-card">
+            <div class="icon">📝</div>
+            <h3>Start Assessment</h3>
+            <p>Mulai ukur kesiapan digital UMKM Anda secara mandiri.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">📘</div>
+            <h3>Learn Features</h3>
+            <p>Pelajari fitur-fitur digitalisasi yang dapat meningkatkan bisnismu.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">⏳</div>
+            <h3>Progress</h3>
+            <p>Pantau perkembangan digitalisasi Anda dari waktu ke waktu.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon">📜</div>
+            <h3>History</h3>
+            <p>Lihat kembali hasil assessment sebelumnya.</p>
+        </div>
+
+    </div>
+
+    <!-- NEXT BUTTON -->
+    <div class="next-btn-container">
+        <a href="assessment.html" class="next-btn">Next →</a>
+    </div>
+
+    <!-- JS: Membuat fitur bisa diklik -->
+    <script>
+        document.querySelectorAll(".feature-card").forEach(card => {
+            card.addEventListener("click", () => {
+                let featureName = card.querySelector("h3").innerText;
+
+                if (featureName === "Start Assessment") {
+                    window.location.href = "assessment.html";
+                } 
+                else if (featureName === "Learn Features") {
+                    window.location.href = "learn_features.html";
+                } 
+                else if (featureName === "Progress") {
+                    window.location.href = "progress.html";
+                } 
+                else if (featureName === "History") {
+                    window.location.href = "history.html";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

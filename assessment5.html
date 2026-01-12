@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Page - Vinix D-Ready</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e5e7eb;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #0d2c73;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 14px;
+            width: 88%;
+            margin: 30px auto 20px;
+        }
+
+        .navbar-left {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+        }
+
+        .logout-btn {
+            background: #1b4ba3;
+            padding: 8px 18px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        /* HEADER */
+        .header-box {
+            width: 88%;
+            margin: auto;
+            background: #8cbcff;
+            padding: 30px;
+            border-radius: 14px;
+            color: #0d2c73;
+        }
+
+        .header-box h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .header-box p {
+            margin-top: 8px;
+            font-size: 15px;
+        }
+
+        /* MAIN CONTENT */
+        .main-container {
+            width: 88%;
+            margin: 25px auto;
+            background: linear-gradient(to bottom, #4b79ff, #9cd5ff);
+            padding: 30px;
+            border-radius: 16px;
+            color: white;
+        }
+
+        .test-box {
+            background: #2656d4;
+            padding: 20px 30px;
+            border-radius: 14px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* PROGRESS */
+        .progress-bar-bg {
+            width: 100%;
+            height: 12px;
+            background: #ffffff;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .progress-bar-fill {
+            width: 20%;
+            height: 100%;
+            background: orange;
+            border-radius: 10px;
+        }
+
+        .progress-text {
+            margin-top: 6px;
+            font-size: 14px;
+        }
+
+        /* QUESTION BOX */
+        .question-box {
+            background: #2656d4;
+            padding: 20px 25px;
+            border-radius: 14px;
+            margin-top: 25px;
+        }
+
+        .question-text {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .option-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .option-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .option-list input {
+            margin-right: 10px;
+        }
+
+        /* NEXT BUTTON */
+        .next-btn {
+            background: #0d2c73;
+            padding: 12px 32px;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 25px;
+            float: right;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="navbar-left">VINIX D-Ready</div>
+
+        <div class="navbar-menu">
+            <a href="home.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <a href="login.html" class="logout-btn" style="text-decoration:none; color:white;">
+            Logout 👤
+        </a>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header-box">
+        <h1>Start Assessment</h1>
+        <p>Jawablah pertanyaan berikut untuk menilai tingkat kesiapan digital bisnis anda</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-container">
+
+        <div class="test-box">
+            🔍 <b>Assessment Test</b><br>
+            Terdiri dari 10 pertanyaan – waktu pengerjaan &lt; 10 menit
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-bar-bg">
+            <div class="progress-bar-fill"></div>
+        </div>
+        <div class="progress-text">Progres 10 / 10</div>
+
+        <!-- QUESTION 1 -->
+        <div class="question-box">
+            <div class="question-text">
+                <b>9.</b> Apakah Anda memahami teknologi dasar untuk bisnis digital?
+            </div>
+
+            <ul class="option-list">
+                <li><input type="radio" name="q1"> Tidak</li>
+                <li><input type="radio" name="q1"> Sedikit</li>
+                <li><input type="radio" name="q1"> Cukup</li>
+                <li><input type="radio" name="q1"> Sangat Baik</li>
+            </ul>
+        </div>
+
+        <!-- QUESTION 2 -->
+        <div class="question-box">
+            <div class="question-text">
+                <b>10.</b> Apakah Anda melakukan backup data secara digital?
+            </div>
+
+            <ul class="option-list">
+                <li><input type="radio" name="q2"> Tidak pernah</li>
+                <li><input type="radio" name="q2"> Kadang</li>
+                <li><input type="radio" name="q2"> Ya, manual</li>
+                <li><input type="radio" name="q2"> Ya, otomatis</li>
+            </ul>
+        </div>
+
+        <!-- NEXT BUTTON -->
+        <a href="learn_features.html" class="next-btn">Next</a>
+
+    </div>
+<!-- TOMBOL SUBMIT -->
+<button class="next-btn" onclick="hitungSkor()">Submit</button>
+
+<!-- TEMPAT HASIL SKOR -->
+<div id="score-result" style="
+    margin-top: 30px; 
+    padding: 20px; 
+    background: white; 
+    color: #0d2c73; 
+    border-radius: 12px; 
+    font-size: 20px; 
+    display: none;">
+</div>
+
+<script>
+    function hitungSkor() {
+        // Skor jawaban (0–3)
+        const skor = {
+            q1: [0, 1, 2, 3],
+            q2: [0, 1, 2, 3]
+        };
+    
+        let total = 0;
+    
+        // Ambil jawaban q1
+        const q1 = document.querySelector('input[name="q1"]:checked');
+        if (q1) total += skor.q1[Array.from(document.getElementsByName('q1')).indexOf(q1)];
+    
+        // Ambil jawaban q2
+        const q2 = document.querySelector('input[name="q2"]:checked');
+        if (q2) total += skor.q2[Array.from(document.getElementsByName('q2')).indexOf(q2)];
+    
+        // Tentukan level otomatis
+        let level = "";
+        if (total <= 2) level = "Rendah Digital";
+        else if (total <= 4) level = "Menengah Digital";
+        else level = "Tinggi Digital";
+    
+        // Simpan hasil ke LocalStorage (Agar History bisa membaca)
+        localStorage.setItem("vinix_score", total);
+        localStorage.setItem("vinix_level", level);
+        localStorage.setItem("vinix_date", new Date().toLocaleDateString("id-ID"));
+    
+        // OPTIONAL: Tampilkan di halaman ini sebelum pindah
+        const resultBox = document.getElementById("score-result");
+        resultBox.style.display = "block";
+        resultBox.innerHTML = `
+            <b>Hasil Skor Anda:</b><br>
+            Total skor: <span style="font-size:26px; font-weight:bold;">${total}</span> / 10
+            <br><br>
+            ${level}
+            <br><br>
+            <i>Data tersimpan. Mengarahkan ke halaman History...</i>
+        `;
+    
+        // Pindah ke halaman history
+        setTimeout(() => {
+            window.location.href = "history.html";
+        }, 1500);
+    }
+    </script>
+    <script>
+        // Contoh nilai skor dan level setelah assessment selesai
+        // ganti variabel ini dengan variabel milikmu
+        let totalScore = hasilAkhir;  // skor akhir kamu
+        let levelDigital = level;     // level digital yang kamu tentukan
+        
+        // Simpan ke localStorage
+        localStorage.setItem("vinix_score", totalScore);
+        localStorage.setItem("vinix_level", levelDigital);
+        localStorage.setItem("vinix_date", new Date().toLocaleDateString("id-ID"));
+        </script>
+        
+    
+</body>
+</html>
